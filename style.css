@@ -6,6 +6,9 @@
 
 body {
     background: #262626;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .clock {
@@ -16,7 +19,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: white url("https://www.freeiconspng.com/thumbs/roman-numerals-png/roman-numerals-clock-png-6.png");
+    background-size: cover;
     border-radius: 50%;
     border: solid 20px #ff3300;
     box-shadow: 0 0 2xp 4px #921f02, inset 0 0 10px #262626;
@@ -28,14 +32,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30px;
-    height: 30px;
+    width: 37px;
+    height: 37px;
     background-color: #ff3300;
     border-radius: 50%;
     z-index: 4;
 }
 
 .hour-hand {
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -55,6 +60,7 @@ body {
 }
 
 .minute-hand {
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: 2;
@@ -74,6 +80,7 @@ body {
 }
 
 .second-hand {
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: 3;
